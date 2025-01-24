@@ -1,0 +1,21 @@
+
+
+/.idea/*
+/.idea/modules.xml
+/.idea/onepaySubscription.iml
+/.idea/misc.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+.venv/*
+.venv
+/venv/
+
+**/__pycache__/
+
+# Ignore __pycache__ directories
+__pycache__/
+
+## Ignore .env files
+#*.env
+/static/
