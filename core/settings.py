@@ -154,3 +154,60 @@ REST_FRAMEWORK = {
 # CORS and CSRF Settings
 CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS', '').split(',')
 CORS_ALLOWED_ORIGINS = os.getenv('CORS_ALLOWED_ORIGINS', '').split(',')
+
+# Logging Configuration
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': 'logs/whatsapp.log',
+            'maxBytes': 1024*1024*5,  # 5 MB
+            'backupCount': 5,
+            'formatter': 'verbose',
+        },
+        'error_file': {
+            'level': 'ERROR',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': 'logs/error.log',
+            'maxBytes': 1024*1024*5,  # 5 MB
+            'backupCount': 5,
+            'formatter': 'verbose',
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+            'propagate': True,
+        },
+        'whatsapp': {
+            'handlers': ['console', 'file', 'error_file'],
+            'level': os.getenv('WHATSAPP_LOG_LEVEL', 'INFO'),
+            'propagate': True,
+        },
+    }
+}

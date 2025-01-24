@@ -1,0 +1,135 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <style type="text/css">
+        .form-row {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .form-row label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-row input[type="text"],
+        .form-row textarea {
+            width: 90%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .submit-row {
+            padding: 10px;
+            margin-top: 20px;
+            text-align: right;
+        }
+        .message-type-selector {
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        .message-type-selector label {
+            margin-right: 15px;
+        }
+        #template-options {
+            padding: 10px;
+            border: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const messageTypeRadios = document.querySelectorAll('input[name="message_type"]');
+            const textMessageDiv = document.getElementById('text-message-div');
+            const templateOptionsDiv = document.getElementById('template-options');
+            const contentTextarea = document.getElementById('content');
+
+            function updateFormVisibility() {
+                const selectedType = document.querySelector('input[name="message_type"]:checked').value;
+                if (selectedType === 'text') {
+                    textMessageDiv.classList.remove('hidden');
+                    templateOptionsDiv.classList.add('hidden');
+                    contentTextarea.required = true;
+                } else {
+                    textMessageDiv.classList.add('hidden');
+                    templateOptionsDiv.classList.remove('hidden');
+                    contentTextarea.required = false;
+                }
+            }
+
+            messageTypeRadios.forEach(radio => {
+                radio.addEventListener('change', updateFormVisibility);
+            });
+
+            // Initial visibility
+            updateFormVisibility();
+        });
+    </script>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a href="{% url 'admin:whatsapp_whatsappmessage_changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+    &rsaquo; {% trans 'Send Test Message' %}
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <form method="post">
+        {% csrf_token %}
+        <fieldset class="module aligned">
+            <h2>{% trans 'Send Test Message' %}</h2>
+            
+            <div class="form-row">
+                <label for="receiver">{% trans 'Receiver Phone Number:' %}</label>
+                <input type="text" name="receiver" id="receiver" required 
+                       placeholder="Example: +1234567890">
+                <p class="help">{% trans 'Enter the phone number with country code (e.g., +1234567890)' %}</p>
+            </div>
+
+            <div class="message-type-selector">
+                <label>{% trans 'Message Type:' %}</label>
+                <label>
+                    <input type="radio" name="message_type" value="template" checked> 
+                    {% trans 'Template Message' %}
+                </label>
+                <label>
+                    <input type="radio" name="message_type" value="text"> 
+                    {% trans 'Text Message' %}
+                </label>
+            </div>
+
+            <div id="template-options">
+                <div class="form-row">
+                    <label for="template_name">{% trans 'Template Name:' %}</label>
+                    <input type="text" name="template_name" id="template_name" 
+                           value="hello_world" placeholder="e.g., hello_world">
+                </div>
+                <div class="form-row">
+                    <label for="language_code">{% trans 'Language Code:' %}</label>
+                    <input type="text" name="language_code" id="language_code" 
+                           value="en_US" placeholder="e.g., en_US">
+                </div>
+            </div>
+            
+            <div id="text-message-div" class="form-row hidden">
+                <label for="content">{% trans 'Message Content:' %}</label>
+                <textarea name="content" id="content" rows="5" 
+                          placeholder="Enter your message here"></textarea>
+            </div>
+            
+            <div class="submit-row">
+                <input type="submit" value="{% trans 'Send Message' %}" class="default">
+                <a href="{% url 'admin:whatsapp_whatsappmessage_changelist' %}" 
+                   class="closelink">{% trans 'Cancel' %}</a>
+            </div>
+        </fieldset>
+    </form>
+</div>
+{% endblock %} 

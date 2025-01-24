@@ -1,0 +1,134 @@
+INFO 2025-01-23 13:46:54,733 autoreload 87 281473317658656 Watching for file changes with StatReloader
+INFO 2025-01-23 13:47:12,835 autoreload 7 281473457688608 Watching for file changes with StatReloader
+INFO 2025-01-23 13:47:23,086 basehttp 7 281473385034144 "GET /admin/ HTTP/1.1" 200 6762
+WARNING 2025-01-23 13:47:23,219 log 7 281473385034144 Not Found: /favicon.ico
+WARNING 2025-01-23 13:47:23,220 basehttp 7 281473385034144 "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-23 13:47:25,603 basehttp 7 281473385034144 "GET /admin/whatsapp/whatsappmessage/ HTTP/1.1" 200 17252
+WARNING 2025-01-23 13:47:25,630 log 7 281473296953760 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-01-23 13:47:25,631 log 7 281473286468000 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2025-01-23 13:47:25,631 basehttp 7 281473296953760 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+WARNING 2025-01-23 13:47:25,631 basehttp 7 281473286468000 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+INFO 2025-01-23 13:47:25,635 basehttp 7 281473385034144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-23 13:47:32,594 basehttp 7 281473385034144 "GET /admin/whatsapp/whatsappmessage/send-test-message/ HTTP/1.1" 200 7320
+INFO 2025-01-23 13:47:37,118 services 7 281473385034144 Message sent successfully: wamid.HBgLOTQ3NzIxMjk5NDQVAgARGBIxRUI3M0FFNzcyNDlDQjZFNjAA
+INFO 2025-01-23 13:47:37,121 basehttp 7 281473385034144 "POST /admin/whatsapp/whatsappmessage/send-test-message/ HTTP/1.1" 302 0
+INFO 2025-01-23 13:47:37,153 basehttp 7 281473385034144 "GET /admin/whatsapp/whatsappmessage/ HTTP/1.1" 200 18028
+WARNING 2025-01-23 13:47:37,179 log 7 281473286468000 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2025-01-23 13:47:37,181 log 7 281473296953760 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-01-23 13:47:37,184 basehttp 7 281473286468000 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+WARNING 2025-01-23 13:47:37,185 basehttp 7 281473296953760 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+INFO 2025-01-23 13:47:37,189 basehttp 7 281473385034144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-24 12:52:06,330 autoreload 7 281473513431072 Watching for file changes with StatReloader
+INFO 2025-01-24 12:52:10,343 basehttp 7 281473364062624 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+WARNING 2025-01-24 12:52:10,349 log 7 281473364062624 Not Found: /static/admin/css/base.css
+WARNING 2025-01-24 12:52:10,351 log 7 281473353576864 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-01-24 12:52:10,352 log 7 281473343091104 Not Found: /static/admin/js/theme.js
+WARNING 2025-01-24 12:52:10,352 basehttp 7 281473364062624 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:10,352 log 7 281473332605344 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-01-24 12:52:10,353 log 7 281473322119584 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-01-24 12:52:10,354 basehttp 7 281473343091104 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:10,355 log 7 281473311633824 Not Found: /static/admin/css/login.css
+WARNING 2025-01-24 12:52:10,355 basehttp 7 281473353576864 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:10,356 basehttp 7 281473332605344 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:10,356 basehttp 7 281473322119584 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:10,357 basehttp 7 281473311633824 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:10,357 log 7 281473353576864 Not Found: /static/admin/css/responsive.css
+WARNING 2025-01-24 12:52:10,359 basehttp 7 281473353576864 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+INFO 2025-01-24 12:52:11,257 basehttp 7 281473343091104 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+WARNING 2025-01-24 12:52:11,267 log 7 281473322119584 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-01-24 12:52:11,268 log 7 281473332605344 Not Found: /static/admin/css/base.css
+WARNING 2025-01-24 12:52:11,269 log 7 281473311633824 Not Found: /static/admin/js/theme.js
+WARNING 2025-01-24 12:52:11,270 log 7 281473364062624 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-01-24 12:52:11,271 log 7 281473353576864 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-01-24 12:52:11,272 log 7 281473343091104 Not Found: /static/admin/css/login.css
+WARNING 2025-01-24 12:52:11,273 basehttp 7 281473322119584 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:11,274 basehttp 7 281473332605344 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:11,274 basehttp 7 281473311633824 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:11,275 basehttp 7 281473364062624 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:11,275 basehttp 7 281473353576864 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:11,276 basehttp 7 281473343091104 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:11,277 log 7 281473322119584 Not Found: /static/admin/css/responsive.css
+WARNING 2025-01-24 12:52:11,280 basehttp 7 281473322119584 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+INFO 2025-01-24 12:52:11,999 basehttp 7 281473332605344 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+WARNING 2025-01-24 12:52:12,010 log 7 281473364062624 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-01-24 12:52:12,011 log 7 281473311633824 Not Found: /static/admin/css/base.css
+WARNING 2025-01-24 12:52:12,012 log 7 281473353576864 Not Found: /static/admin/js/theme.js
+WARNING 2025-01-24 12:52:12,013 log 7 281473322119584 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-01-24 12:52:12,014 log 7 281473343091104 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-01-24 12:52:12,015 log 7 281473332605344 Not Found: /static/admin/css/login.css
+WARNING 2025-01-24 12:52:12,015 basehttp 7 281473364062624 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:12,016 basehttp 7 281473311633824 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:12,016 basehttp 7 281473353576864 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:12,017 basehttp 7 281473322119584 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:12,017 basehttp 7 281473343091104 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:12,018 basehttp 7 281473332605344 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:52:12,019 log 7 281473364062624 Not Found: /static/admin/css/responsive.css
+WARNING 2025-01-24 12:52:12,022 basehttp 7 281473364062624 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+INFO 2025-01-24 12:55:50,921 autoreload 7 281473513431072 /app/core/settings.py changed, reloading.
+INFO 2025-01-24 12:55:55,478 autoreload 7 281473564835872 Watching for file changes with StatReloader
+INFO 2025-01-24 12:55:59,945 basehttp 7 281473491988896 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-01-24 12:55:59,960 basehttp 7 281473491988896 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+WARNING 2025-01-24 12:55:59,984 log 7 281473481503136 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-01-24 12:55:59,984 log 7 281473491988896 Not Found: /static/admin/css/base.css
+WARNING 2025-01-24 12:55:59,985 log 7 281473471017376 Not Found: /static/admin/css/login.css
+WARNING 2025-01-24 12:55:59,985 log 7 281473460531616 Not Found: /static/admin/css/responsive.css
+WARNING 2025-01-24 12:55:59,986 log 7 281473450045856 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-01-24 12:55:59,988 log 7 281473364062624 Not Found: /static/admin/js/theme.js
+WARNING 2025-01-24 12:55:59,989 basehttp 7 281473481503136 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:55:59,990 basehttp 7 281473491988896 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:55:59,990 basehttp 7 281473471017376 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:55:59,992 basehttp 7 281473460531616 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:55:59,992 basehttp 7 281473450045856 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:55:59,994 basehttp 7 281473364062624 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:00,043 log 7 281473491988896 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-01-24 12:56:00,043 basehttp 7 281473491988896 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:00,044 log 7 281473460531616 Not Found: /static/admin/css/responsive.css
+WARNING 2025-01-24 12:56:00,045 log 7 281473450045856 Not Found: /static/admin/css/login.css
+WARNING 2025-01-24 12:56:00,045 log 7 281473364062624 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-01-24 12:56:00,046 basehttp 7 281473460531616 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:00,046 basehttp 7 281473450045856 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:00,047 basehttp 7 281473364062624 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+INFO 2025-01-24 12:56:01,777 basehttp 7 281473491988896 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+WARNING 2025-01-24 12:56:01,794 log 7 281473491988896 Not Found: /static/admin/css/base.css
+WARNING 2025-01-24 12:56:01,799 basehttp 7 281473491988896 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:01,795 log 7 281473460531616 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-01-24 12:56:01,796 log 7 281473364062624 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-01-24 12:56:01,798 log 7 281473471017376 Not Found: /static/admin/css/login.css
+WARNING 2025-01-24 12:56:01,799 log 7 281473450045856 Not Found: /static/admin/js/theme.js
+WARNING 2025-01-24 12:56:01,794 log 7 281473481503136 Not Found: /static/admin/css/responsive.css
+WARNING 2025-01-24 12:56:01,800 basehttp 7 281473460531616 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:01,801 basehttp 7 281473364062624 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:01,801 basehttp 7 281473471017376 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:01,802 basehttp 7 281473450045856 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:01,802 basehttp 7 281473481503136 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:01,805 log 7 281473481503136 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-01-24 12:56:01,805 basehttp 7 281473481503136 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:01,846 log 7 281473471017376 Not Found: /static/admin/css/responsive.css
+WARNING 2025-01-24 12:56:01,848 log 7 281473491988896 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-01-24 12:56:01,849 log 7 281473450045856 Not Found: /static/admin/css/login.css
+WARNING 2025-01-24 12:56:01,850 basehttp 7 281473471017376 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:01,850 basehttp 7 281473491988896 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:01,851 basehttp 7 281473450045856 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+INFO 2025-01-24 12:56:03,472 basehttp 7 281473491988896 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+WARNING 2025-01-24 12:56:03,497 log 7 281473491988896 Not Found: /static/admin/css/base.css
+WARNING 2025-01-24 12:56:03,498 log 7 281473460531616 Not Found: /static/admin/css/responsive.css
+WARNING 2025-01-24 12:56:03,499 log 7 281473450045856 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-01-24 12:56:03,501 log 7 281473364062624 Not Found: /static/admin/js/theme.js
+WARNING 2025-01-24 12:56:03,502 log 7 281473471017376 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-01-24 12:56:03,503 log 7 281473481503136 Not Found: /static/admin/css/login.css
+WARNING 2025-01-24 12:56:03,503 basehttp 7 281473491988896 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:03,504 basehttp 7 281473460531616 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:03,504 basehttp 7 281473450045856 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:03,505 basehttp 7 281473364062624 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:03,505 basehttp 7 281473471017376 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:03,506 basehttp 7 281473481503136 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:03,508 log 7 281473481503136 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-01-24 12:56:03,509 basehttp 7 281473481503136 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:03,550 log 7 281473364062624 Not Found: /static/admin/css/responsive.css
+WARNING 2025-01-24 12:56:03,552 log 7 281473491988896 Not Found: /static/admin/css/login.css
+WARNING 2025-01-24 12:56:03,553 log 7 281473471017376 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-01-24 12:56:03,554 basehttp 7 281473364062624 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:03,554 basehttp 7 281473491988896 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:03,555 basehttp 7 281473471017376 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-01-24 12:56:03,622 log 7 281473491988896 Not Found: /favicon.ico
+WARNING 2025-01-24 12:56:03,623 basehttp 7 281473491988896 "GET /favicon.ico HTTP/1.1" 404 179
